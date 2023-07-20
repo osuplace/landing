@@ -7,7 +7,6 @@ function swapContent(currentContentSelector, newContentSelector) {
 }
 
 function handleFragment() {
-	console.log(window.location.hash)
 	if (window.location.hash == '#onboarding') {
 		swapContent('div.card.place2023 .main-content', 'div.card.place2023 .template-instructions');
 	} else {
