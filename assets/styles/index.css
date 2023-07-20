@@ -1,3 +1,9 @@
+/* newcss */
+body {
+	--nc-lk-1: #FF3881 !important;
+	--nc-lk-2: #FF3881 !important;
+}
+
 /* header */
 
 .logo {
