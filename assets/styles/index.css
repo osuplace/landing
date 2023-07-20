@@ -1,0 +1,61 @@
+/* header */
+
+.logo {
+	margin: 0;
+	margin-right: 1ch;
+	height: 2em;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+	header h1 {
+		font-size: 1.5rem;
+	}
+}
+
+/* card */
+
+div.card {
+	padding: 2rem;
+	margin-bottom: 1rem;
+
+	border-radius: 1rem;
+
+	background-color: black;
+}
+
+div.card h2 {
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.card hr {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.card.place2023 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2023-background-smaller.png");
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+}
+
+div.card.connorcanvas {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/assets/images/connor-background.png");
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+}
+
+/* misc */
+
+button {
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+
+a.link-with-button {
+	text-decoration: none;
+}

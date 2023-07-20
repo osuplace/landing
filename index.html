@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>osu! Logo Builders — osu!place</title>
+	<meta name="description" content="Join our community and help us build the osu! Logo on Canvas games like r/place!">
+
+	<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+
+	<link rel="stylesheet" href="/assets/styles/index.css">
+	<script src="/assets/scripts/index.js"></script>
+</head>
+<body>
+	<header>
+		<h1>
+			<img src="/favicon.png" class="logo"
+			alt="Pixelated osu logo.">
+			osu! Logo Builders
+		</h1>
+	</header>
+
+	<div class="card place2023">
+		<span class="main-content">
+			<h2>r/place 2023</h2>
+			<p>It's here! r/place is coming back on the 20th of July, 2023.</p>
+
+			<p>
+				<a class="link-with-button" href="https://discord.osu.place" target="_blank">
+					<button>
+						Join our Discord
+					</button>
+				</a>
+				
+				<button onclick="swapContent('div.card.place2023 .main-content', 'div.card.place2023 .template-instructions')">
+					Get the Template
+				</button>
+
+				<a href="https://www.reddit.com/r/reddit/comments/153vw8z/better_late_than_never/" target="_blank">
+					Reddit's announcement
+				</a>
+			</p>
+		</span>
+		<span class="template-instructions" style="display: none;">
+			<h2>Template installation guide</h2>
+			<ol>
+				<li>
+					Get <b>Violentmonkey</b>, or any other userscript manager<br>
+					<a class="link-with-button" href="https://violentmonkey.github.io/get-it/" target="_blank">
+						<button>
+							Get Violentmonkey
+						</button>
+					</a>
+				</li>
+				<li>
+					Install the <b>template-manager</b> userscript<br>
+					<a class="link-with-button" href="https://github.com/osuplace/templateManager/raw/main/dist/templateManager.user.js" target="_blank">
+						<button>
+							Install template-manager
+						</button>
+					</a>
+				</li>
+				<li>
+					Follow our <b>template link</b> to access it in the r/place canvas:<br>
+					<a href="https://new.reddit.com/r/place/?jsontemplate=https%3A%2F%2Fosu.place%2Fe%2Fosuplace2023.json" target="_blank">https://new.reddit.com/r/place/<b>?jsontemplate=https%3A%2F%2Fosu.place%2Fe%2Fosuplace2023.json</b></a> <br>
+					<small>(Links like this make sure templates load correctly)</small>
+				</li>
+			</ol>
+			<hr>
+			<button onclick="swapContent('div.card.place2023 .template-instructions', 'div.card.place2023 .main-content')">
+				Go back
+			</button>
+		</span>
+		
+	</div>
+
+	<div class="card connorcanvas">
+		<h2>Connor's Cool Content Canvas</h2>
+		<p>Connor's canvas has ended, and we managed to stay until the whiteout!</p>
+		<p>Thank you to everyone that participated. o7</p>
+
+		<p>
+			<a class="link-with-button" href="https://www.youtube.com/watch?v=ssi4v1OWPiQ" target="_blank">
+				<button>
+					See the Timelapse
+				</button>
+			</a>
+			
+			<a href="https://canvas.cdawgva.com" target="_blank">
+				Connor's Cool Content Canvas website
+			</a>
+		</p>
+		
+	</div>
+
+	<footer>
+		<small>
+			This website and community are not endorsed by, directly affiliated with, maintained, authorized, or sponsored by osu!, ppy, Reddit, or Discord. All product and company names are the registered trademarks of their original owners.
+		</small>
+	</footer>
+</body>
+</html>
