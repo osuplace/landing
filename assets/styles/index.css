@@ -33,6 +33,10 @@ div.card hr {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+div.card p.actions a {
+	white-space: nowrap;
+}
+
 div.card.place2023 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2023-background-smaller.png");
 	background-position: center;
