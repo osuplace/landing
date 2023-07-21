@@ -79,16 +79,35 @@
 					<small>(Links like this make sure templates load correctly)</small>
 				</li>
 			</ol>
-			<h3>Common Issues</h3>
+			<h3>Troubleshooting</h3>
+			<h4>
+				General issues
+			</h4>
 			<ul>
-				<li>
-					If you get template <b>notifications</b> but don't see <b>the actual overlay</b> on <b>iOS</b>, try refreshing a couple times!
-				</li>
 				<li>
 					If you get a notification saying "<b>No default template set.</b>", you can safely ignore it! But if you'd like it to go away, you can go to the Template Manager settings and add <code>https://osu.place/e/osuplace2023.json</code> to "Always Load".
 				</li>
 				<li>
 					If the overlay is <b>off-center</b>, set your browser zoom to exactly <b>100%</b>! You can usually do this by pressing <code>Ctrl + 0</code>, but you might need to do it in your browser menu.
+					<ul>
+						<li>
+							If this doesn't resolve the issue, try to <b>zoom out more</b>. This happens when you have <b>screen scaling</b> on in your operating system settings. For example, if you have 125% scaling, you'd need 80% zoom in your browser. Play around with it!
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<h4>
+				iOS issues
+			</h4>
+			<ul>
+				<li>
+					If you get an error saying "<b>Failed to write</b>" when installing the userscript, open the <b>Userscripts app in your app list</b>, then tap on <b>Set Userscripts Directory</b>, go to the <b>"On my iDevice"</b> folder, make a <b>new folder called "Userscripts"</b>, and pick the folder you just made.
+				</li>
+				<li>
+					If you're trying to install the userscript by downloading the file but iOS doesn't recognize it as a JavaScript file, <b>you don't need to do this!</b> Just open the userscript <b>in your browser</b>, open the <b>Userscripts extension</b>, and tap on the <b>green banner</b> to install the script.
+				</li>
+				<li>
+					If you get template <b>notifications</b> but don't see <b>the actual overlay</b>, try refreshing a couple times!
 				</li>
 			</ul>
 			<hr>
