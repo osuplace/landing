@@ -35,6 +35,12 @@ div.card h2, div.card h3, div.card h1, div.card h4, div.card h5 {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+@media (prefers-color-scheme: light) {
+	div.card code {
+		color: black;
+	}
+}
+
 div.card hr {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -68,4 +74,8 @@ button {
 
 a.link-with-button {
 	text-decoration: none;
+}
+
+ul > li {
+    margin-left: 2ch;
 }
