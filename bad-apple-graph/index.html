@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bad Apple Graph</title>
+	<!-- By April <april@dummy.cafe> -->
+
+	<script>
+		let graph;
+		function getCurrentTime() {
+			return (Date.now() - 1689860100000) / 1000 / 60 / 60;
+		}
+		function update() {
+			let width = graph.width;
+			let progress = (getCurrentTime()) / 72; // 1 is done
+			if (progress > 1) progress = 1;
+			let progressInPixels = width * progress;
+			let targetPosPx = progressInPixels - (window.innerWidth / 2);
+			graph.style.left = `-${targetPosPx}px`;
+		}
+		window.onload = () => {
+			graph = document.getElementById('graph');
+			setInterval(update, 1000);
+		}
+	</script>
+
+	<style>
+		:root, body {
+			width: 98%;
+			height: 98%;
+			overflow-y: hidden;
+			overflow-x: hidden;
+		}
+
+		#graph {
+			height: 100%;
+			position: absolute;
+			z-index: 1;
+		}
+
+		#line {
+			z-index: 2;
+			height: 100%;
+			width: 0.5rem;
+			background-color: green;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		#legend {
+			z-index: 3;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 40%;
+		}
+	</style>
+</head>
+<body>
+	<img id="graph" src="assets/v3.png">
+	<div id="line"></div>
+	<img id="legend" src="assets/legend-waifu2x.png">
+</body>
+</html>
