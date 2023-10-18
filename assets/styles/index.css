@@ -19,6 +19,48 @@ body {
 	}
 }
 
+/* navigation */
+
+.nav-parent {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.nav-parent > a > button {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 100%;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1em;
+}
+
+.nav-bar > * {
+	flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav-bar {
+		flex-direction: column;
+		gap: 0.5em;
+	}
+
+	.nav-separator {
+		display: none;
+	}
+
+	.nav-bar > * {
+		flex: 0;
+		width: 100%;
+	}
+}
+
 /* card */
 
 div.card {
