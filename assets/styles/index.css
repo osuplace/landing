@@ -2,9 +2,35 @@
 body {
 	--nc-lk-1: #FF3881 !important;
 	--nc-lk-2: #FF3881 !important;
+	padding: 1rem;
 }
 
 /* header */
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	font-size: 2em;
+
+	padding-bottom: 1rem;
+}
+
+header > div {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+header > div > span {
+	margin: 0;
+}
+
+header > div > nav {
+	font-size: 1rem;
+	margin: 0;
+}
 
 .logo {
 	margin: 0;
@@ -14,7 +40,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-	header h1 {
+	header {
 		font-size: 1.5rem;
 	}
 }
@@ -24,21 +50,48 @@ body {
 .nav-parent {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5em;
+	align-items: stretch;
+	gap: 1ch;
 }
 
-.nav-parent > a > button {
+.nav-parent > a > button, .nav-bar > a > button {
 	padding-top: 1em;
 	padding-bottom: 1em;
+	margin: 0;
 	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.25em;
+
+	font-size: 1.5em;
+}
+
+.nav-parent > a > button > small, .nav-bar > a > button > small {
+	font-size: 0.67em;
+}
+
+.nav-parent > a > button > img, .nav-bar > a > button > img,
+.nav-parent > a > button > span > img, .nav-bar > a > button > span > img {
+	height: 32px;
+	margin-bottom: 0;
+}
+
+.span-with-image {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1ch;
 }
 
 .nav-bar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	gap: 1em;
+	align-items: stretch;
+	gap: 1ch;
 }
 
 .nav-bar > * {
@@ -99,8 +152,33 @@ div.card.place2023 {
 	color: white;
 }
 
+div.card.place2022 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2022-final-bg.png");
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+}
+
 div.card.connorcanvas {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/assets/images/connor-background.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/connor-background.png");
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+}
+
+div.card.pxls2017 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/pxls2017-final-bg.png");
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+}
+
+div.card.place2017 {
+	background-color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2017-final-bg.png");
 	background-position: center;
 	background-size: cover;
 
