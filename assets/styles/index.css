@@ -145,7 +145,7 @@ div.card p.actions a {
 }
 
 div.card.place2023 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2023-final-bg.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2023-final-bg.webp");
 	background-position: center;
 	background-size: cover;
 
@@ -153,7 +153,7 @@ div.card.place2023 {
 }
 
 div.card.place2022 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2022-final-bg.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2022-final-bg.webp");
 	background-position: center;
 	background-size: cover;
 
@@ -161,7 +161,7 @@ div.card.place2022 {
 }
 
 div.card.connorcanvas {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/connor-background.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/connor-background.webp");
 	background-position: center;
 	background-size: cover;
 
@@ -169,7 +169,7 @@ div.card.connorcanvas {
 }
 
 div.card.pxls2017 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/pxls2017-final-bg.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/pxls2017-final-bg.webp");
 	background-position: center;
 	background-size: cover;
 
@@ -178,7 +178,7 @@ div.card.pxls2017 {
 
 div.card.place2017 {
 	background-color: white;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2017-final-bg.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/2017-final-bg.webp");
 	background-position: center;
 	background-size: cover;
 
