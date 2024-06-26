@@ -185,6 +185,15 @@ div.card.place2017 {
 	color: white;
 }
 
+div.card.neurocanvas {
+	background-color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/assets/images/neuro-final-bg.webp");
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+}
+
 /* misc */
 
 button {
